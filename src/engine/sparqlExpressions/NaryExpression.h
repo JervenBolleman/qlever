@@ -101,6 +101,7 @@ SparqlExpression::Ptr makeIsLiteralExpression(SparqlExpression::Ptr child);
 SparqlExpression::Ptr makeIsNumericExpression(SparqlExpression::Ptr child);
 SparqlExpression::Ptr makeBoundExpression(SparqlExpression::Ptr child);
 
+SparqlExpression::Ptr makeDatatypeExpression(SparqlExpression::Ptr child);
 // For a `function` that takes `std::vector<SparqlExpression::Ptr>` (size only
 // known at runtime), create a lambda that takes the `Ptr`s directly as a
 // variable number of arguments (as a variadic template, number of arguments
